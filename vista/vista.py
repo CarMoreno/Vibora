@@ -24,6 +24,9 @@ except AttributeError:
         return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_MainWindow(object):
+    """Esta clase se ocupa de la parte gráfica de la aplicación, gestiona aspectos como
+    botones, frames, inputs, colores, entre otras cosas. Cabe agregar que esta clase se creo
+    haciendo uso de la herramienta QtDesigner"""
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(522, 372)

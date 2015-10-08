@@ -4,8 +4,7 @@ from vista.vista import *
 from modelo.modelo import *
 
 class ControladorCalculator(QtGui.QMainWindow):
-	"""Esta clase usa la vista para mostrarla en pantalla, es la clase principal, desde donde
-	se ejecuta la palicacion"""
+	"""Controlador de la calculadora, pasa al modelo los eventos provenientes de la vista"""
 	def __init__(self, parent=None):
 		QtGui.QWidget.__init__(self, parent)
 		self.vista = Ui_MainWindow() #Construimos un objeto vista

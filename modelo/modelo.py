@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 class ModeloCalculator(object):
 	"""Modelo de la calculadora, se encarga de hacer las operaciones y de mostrar los numeros
-	en la pantalla, tambien se encrga de validar las cadenas de entrada"""
+	en la pantalla, tambien se encarga de validar las cadenas de entrada"""
 	def __init__(self):
 		pass
 

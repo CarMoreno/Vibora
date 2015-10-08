@@ -2,10 +2,12 @@
 from controlador.controlador import *
 import ctypes
 """
+MAIN, DESDE ACÁ CORREMOS LA APLICACIÓN.
+
 Autor: Carlos Andrés Moreno
 Blog: http://www.carmoreno.github.io
 Github: http://www.github.com/CarMoreno
-Version de la app: 1.0
+Versión: 1.0
 
 Vibora Calculator es una aplicación construida en Python 2.7 utilizando la librería gráfica PyQt versión 4,
 la arquitectura siguiendo el patrón MVC, la parte visual de esta calculadora está basada en Nollr Calculator,
