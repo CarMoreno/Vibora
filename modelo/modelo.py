@@ -40,7 +40,7 @@ class ModeloCalculator(object):
 		elif botton_clickeado == "button_erase":#se borra un digito de la cadena
 			self.erase(inicial, inputNumber)
 		elif botton_clickeado == "button_c":#si se da click en el boton C, entonces lo que hubiese en incial sera reseteado
-			inicial = ''	
+			inicial = '0'
 		elif botton_clickeado == "suma":
 			inputNumber.setText(inicial+'+')
 		elif botton_clickeado == "resta":
@@ -74,15 +74,20 @@ class ModeloCalculator(object):
 		"""Muestra el resultado de una cadena valida"""
 		cadena = cadena.replace('x', '*')#Se reemplaza 'x' por '*' para que eval pueda evaluar las expresiones con multiplicaciones
 		try:
-			if self.compruebaCadena(cadena) == False:
+			if self.compruebaCadena(cadena) == False: #Si hay un error en la cadena...
 				inputNumber.setText("Error")
-			else:	
+			else:
+				if cadena is int:
+					int(cadena)
+				elif cadena is float:
+					float(cadena)	
+
 				cadena = str(cadena)#eval funciona con la cadena primitiva de python, la cadena que viene es de typo QtString
-				#Cuando eval realiza la operacion, el tipo de dato cambia a int o float, entonces para mostrarlo en el input se debe de pasar la cadena a str
-				inputNumber.setText(str(eval(cadena))) 
-				#print type(cadena)
-		except Exception, e:
-			raise e
+				resultado = eval(cadena)
+				inputNumber.setText(str(resultado)) #Muestro en el input el resultado
+		except (ZeroDivisionError, Exception):
+			inputNumber.setText("Error")
+			
 		
 	def erase(self, cadena, inputNumber):
 		"""Borra un digito de la cadena"""

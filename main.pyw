@@ -17,13 +17,13 @@ Espero que pueda ser útil para quien la pueda necesitar.
 pull request son bien recibidos :)
 """
 if __name__ == '__main__':
-	myappid = u'CarMoreno.ViboraCalculator.1.0' # arbitrary string
-	ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+    myappid = 'CarMoreno.ViboraCalculator.1.0' # arbitrary string
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
-	#Motor de funcionamiento
-	app = QtGui.QApplication(sys.argv)
-	app.setWindowIcon(QtGui.QIcon('images/icon.png'))
-	# app.setFixedSize(300,200)
-	myapp = ControladorCalculator()
-	myapp.show()
-	sys.exit(app.exec_())
+    #Motor de funcionamiento
+    app = QtGui.QApplication(sys.argv)
+    app.setWindowIcon(QtGui.QIcon('images/icon.png'))
+    # app.setFixedSize(300,200)
+    myapp = ControladorCalculator()
+    myapp.show()
+    sys.exit(app.exec_())
