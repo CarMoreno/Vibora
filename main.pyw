@@ -7,12 +7,12 @@ MAIN, DESDE ACÁ CORREMOS LA APLICACIÓN.
 Autor: Carlos Andrés Moreno
 Blog: http://www.carmoreno.github.io
 Github: http://www.github.com/CarMoreno
-Versión: 1.0
+Versión: 2.0
 
-Vibora Calculator es una aplicación construida en Python 2.7 utilizando la librería gráfica PyQt versión 4,
-la arquitectura siguiendo el patrón MVC, la parte visual de esta calculadora está basada en Nollr Calculator,
-una calculadora hecha con HTML, CSS Y JS disponible en http://apps.nollr.com/calculator.
-Espero que pueda ser útil para quien la pueda necesitar.
+Vibora Calculator es una aplicación construida inicialmente en Python 2.7 (luego se migró a 3.4) utilizando
+la librería gráfica PyQt versión 4, la arquitectura siguiendo el patrón MVC, la parte visual de esta
+calculadora está basada en Nollr Calculator, una calculadora hecha con HTML, CSS Y JS 
+disponible en http://apps.nollr.com/calculator. Espero que pueda ser útil para quien la pueda necesitar.
 
 pull request son bien recibidos :)
 """

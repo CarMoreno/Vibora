@@ -29,7 +29,7 @@ class Ui_MainWindow(object):
     haciendo uso de la herramienta QtDesigner"""
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(522, 372)
+        MainWindow.setFixedSize(522, 372)
         MainWindow.setMouseTracking(False)
         MainWindow.setStyleSheet(_fromUtf8("background-color: #252525;"))
         self.centralwidget = QtGui.QWidget(MainWindow)
