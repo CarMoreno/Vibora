@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+ # -*- coding: utf-8 -*-
 import sys
 from vista.vista import *
 from modelo.modelo import *
@@ -28,13 +30,6 @@ class ControladorCalculator(QtGui.QMainWindow):
                             self.vista.division,
                             self.vista.resultado
                         ]
-        # self.opButtons = [self.vista.button_c,
-        #                 self.vista.button_erase,
-        #                 self.vista.suma,
-        #                 self.vista.resta,
-        #                 self.vista.multiplicacion,
-        #                 self.vista.division   
-        #               ]
         self.inputNumber = self.vista.inputNumber#Caja de texto de la calculadora
         self.modelo = ModeloCalculator()#Necesito un objeto modelo para algunas gestiones
         self.managerMuestra()#Manejador de la muestra de caracteres en la calculadora                       
@@ -54,7 +49,7 @@ class ControladorCalculator(QtGui.QMainWindow):
         self.modelo.managerMuestra(self.buttons, self.buttonReleased)
     
     def buttonReleased(self):
-        """Funcion que se encrga de determinar qué boton ha sido seleccionado y
+        """Funcion que se encarga de determinar qué boton ha sido seleccionado y
         luego de esto, manda el nombre del objeto del boton en forma de string al modelo
         para que este haga las gestiones pertienentes"""
         sending_button = self.sender()

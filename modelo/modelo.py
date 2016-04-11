@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+ #!/usr/bin/python
+ # -*- coding: utf-8 -*-
 class ModeloCalculator(object):
 	"""Modelo de la calculadora, se encarga de hacer las operaciones y de mostrar los numeros
 	en la pantalla, tambien se encarga de validar las cadenas de entrada"""

@@ -1,11 +1,13 @@
-# -*- coding: utf-8 -*-
+ #!/usr/bin/python
+ # -*- coding: utf-8 -*-
 from controlador.controlador import *
 import ctypes
+import sys
 """
 MAIN, DESDE ACÁ CORREMOS LA APLICACIÓN.
 
 Autor: Carlos Andrés Moreno
-Blog: http://www.carmoreno.github.io
+Page: http://carmoreno.github.io
 Github: http://www.github.com/CarMoreno
 Versión: 2.0
 
@@ -23,7 +25,6 @@ if __name__ == '__main__':
     #Motor de funcionamiento
     app = QtGui.QApplication(sys.argv)
     app.setWindowIcon(QtGui.QIcon('images/icon.png'))
-    # app.setFixedSize(300,200)
     myapp = ControladorCalculator()
     myapp.show()
     sys.exit(app.exec_())
